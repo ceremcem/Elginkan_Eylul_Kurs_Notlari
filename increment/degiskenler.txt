@@ -1,0 +1,9 @@
+arttir0 BOOL                FALSE           INTERNAL    0   0   
+P_1s_0  BOOL                FALSE           INTERNAL    0   0   
+sayac   INT             0           INTERNAL    0   0   
+
+arttir  BOOL                FALSE           INPUT   0   0   
+deger_giris INT             0           INPUT   0   0   
+periyot INT             0           INPUT   0   0   
+
+cikis_degeri    INT             0           OUTPUT  0   0   

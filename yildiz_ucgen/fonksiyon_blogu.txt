@@ -1,0 +1,36 @@
+if start = TRUE THEN 
+    ana_cikis := True;
+    yildiz_cikis := True;
+end_if;
+
+if yildiz_cikis = TRUE THEN 
+    if P_1s_0 = FALSE AND P_1s = TRUE THEN 
+        sayac :=  sayac + 1; 
+    end_if;
+    P_1s_0 := P_1s;
+end_if;
+
+if sayac >= gecis_suresi THEN 
+    yildiz_cikis := FALSE; 
+    ucgen_cikis_oncesi := TRUE;
+end_if;
+
+if ucgen_cikis_oncesi = TRUE THEN 
+    if P_0_02s_0 = FALSE AND  P_0_02s = TRUE THEN  
+        sayac2 := sayac2 + 1; 
+    end_if; 
+end_if; 
+P_0_02s_0 :=  P_0_02s;
+
+if sayac2 >= kontaktor_emniyet_suresi THEN 
+    ucgen_cikis := TRUE; 
+    ucgen_cikis_oncesi := FALSE; 
+end_if; 
+
+if stop = TRUE THEN 
+    ana_cikis := false;
+    yildiz_cikis := FALSE; 
+    ucgen_cikis := FALSE;
+    sayac := 0; 
+    sayac2 := 0; 
+end_if;

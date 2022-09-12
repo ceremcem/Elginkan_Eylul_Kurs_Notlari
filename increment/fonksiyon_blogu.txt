@@ -1,0 +1,10 @@
+if arttir = TRUE and P_1s_0 = FALSE and P_1s = TRUE THEN
+    sayac := sayac + 1;
+END_IF;
+
+if sayac >= periyot AND  arttir = TRUE THEN
+    sayac := 0;
+    cikis_degeri := deger_giris + 1; 
+end_if;
+
+P_1s_0 :=  P_1s;

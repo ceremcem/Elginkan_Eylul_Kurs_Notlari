@@ -1,0 +1,13 @@
+P_1s_0  BOOL                FALSE           INTERNAL    0   0   
+sayac   UINT                0           INTERNAL    0   0   
+yon_degistir_ileriye    BOOL                FALSE           INTERNAL    0   0   
+yon_degistir_geriye BOOL                FALSE           INTERNAL    0   0   
+
+ileri_start BOOL                FALSE           INPUT   0   0   
+geri_start  BOOL                FALSE           INPUT   0   0   
+stop    BOOL                FALSE           INPUT   0   0   
+asiri_akim  BOOL                FALSE           INPUT   0   0   
+bekleme_suresi  UINT                0           INPUT   0   0   
+
+ileri_hareket   BOOL                FALSE           OUTPUT  0   0   
+geri_hareket    BOOL                FALSE           OUTPUT  0   0   

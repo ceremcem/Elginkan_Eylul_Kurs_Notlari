@@ -1,0 +1,14 @@
+sayac   UINT                0           INTERNAL    0   0   
+P_1s_0  BOOL                FALSE           INTERNAL    0   0   
+gecis_suresi    UINT                5           INTERNAL    0   0   
+sayac2  UINT                0           INTERNAL    0   0   
+kontaktor_emniyet_suresi    UINT                100     ms  INTERNAL    0   0   
+ucgen_cikis_oncesi  BOOL                FALSE           INTERNAL    0   0   
+P_0_02s_0   BOOL                FALSE           INTERNAL    0   0   
+
+start   BOOL                FALSE           INPUT   0   0   
+stop    BOOL                FALSE           INPUT   0   0   
+
+ana_cikis   BOOL                FALSE           OUTPUT  0   0   
+yildiz_cikis    BOOL                FALSE           OUTPUT  0   0   
+ucgen_cikis BOOL                FALSE           OUTPUT  0   0   

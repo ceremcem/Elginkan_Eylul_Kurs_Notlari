@@ -1,0 +1,57 @@
+if ileri_start = TRUE AND geri_start = TRUE THEN
+    RETURN; 
+end_if;
+
+if geri_hareket = FALSE and ileri_start = TRUE THEN
+    ileri_hareket := TRUE;
+end_if;
+
+if ileri_hareket = FALSE and geri_start = TRUE then
+    geri_hareket := TRUE; 
+END_IF;
+
+if ileri_hareket = TRUE AND geri_start = TRUE then
+    yon_degistir_geriye := TRUE;
+end_if;
+
+if geri_hareket = TRUE AND ileri_start = TRUE then
+    yon_degistir_ileriye := TRUE;
+end_if;
+
+if stop = TRUE OR asiri_akim = TRUE OR (yon_degistir_ileriye = true OR yon_degistir_geriye = TRUE) then
+    ileri_hareket := FALSE;
+    geri_hareket := FALSE;
+end_if;
+
+if (yon_degistir_ileriye = TRUE OR yon_degistir_geriye = TRUE) then
+    if P_1s_0 = FALSE and P_0_1s = TRUE THEN 
+        sayac := sayac + 1;
+    end_if;
+end_if;
+ P_1s_0 :=  P_0_1s;
+
+if sayac >= (bekleme_suresi * 10) THEN
+    if yon_degistir_geriye = TRUE THEN 
+        geri_hareket := true;
+    ELSIF  yon_degistir_ileriye = TRUE then
+        ileri_hareket := true;
+    end_if;
+    sayac := 0;
+    yon_degistir_geriye := FALSE;
+    yon_degistir_ileriye := FALSE;
+end_if;
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
